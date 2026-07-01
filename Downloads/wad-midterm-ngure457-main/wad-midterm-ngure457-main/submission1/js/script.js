@@ -154,3 +154,15 @@ document.getElementById("name").value=
 savedName;
 
 }
+// Banner Toggle
+
+const banner=document.getElementById("banner");
+
+const caption=
+document.getElementById("bannerCaption");
+
+banner.addEventListener("click",()=>{
+
+caption.classList.toggle("show");
+
+});
