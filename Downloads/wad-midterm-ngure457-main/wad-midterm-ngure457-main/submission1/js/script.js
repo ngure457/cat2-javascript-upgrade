@@ -43,4 +43,65 @@ card.innerHTML=`
 </div>`;
 
 cakeContainer.appendChild(card);
+}); 
+
+// Wishlist
+const input=document.getElementById("cakeInput");
+const addBtn=document.getElementById("addCake");
+const list=document.getElementById("wishlist");
+
+function saveWishlist(){
+
+const items=[];
+
+document.querySelectorAll("#wishlist li")
+.forEach(li=>{
+
+items.push(li.firstChild.textContent);
 });
+
+localStorage.setItem("wishlist",JSON.stringify(items)
+);}
+
+
+function createItem(text){
+
+const li=document.createElement("li");
+
+li.append(text);
+
+const remove=document.createElement("button");
+
+remove.textContent="Remove";
+
+remove.onclick=()=>{
+
+li.remove();
+
+saveWishlist();};
+
+li.appendChild(remove);
+
+list.appendChild(li);
+
+}
+
+addBtn.addEventListener("click",()=>{
+
+if(input.value.trim()=="") return;
+
+createItem(input.value);
+
+saveWishlist();
+
+input.value="";
+
+});
+
+const saved=
+JSON.parse(localStorage.getItem("wishlist"));
+
+if(saved){
+
+saved.forEach(createItem);
+}
