@@ -1,0 +1,26 @@
+Sweet Crumbs Cake Shop , JavaScript Implementation Notes
+
+1.Loop-rendered Dynamic Content
+-The "Our Popular Cakes" section is generated dynamically using a JavaScript array of objects.
+-Each cake object contains a required "name" property, along with description and image properties.
+-The cake cards are rendered into the page using the forEach() loop and DOM manipulation instead of hardcoded HTML.
+
+2.Dynamically Add & Remove Elements
+-A Cake Wishlist feature allows users to enter the name of a cake they would like.
+-New wishlist items are created using createElement() and appended to the page using appendChild().
+-Each wishlist item includes a Remove button that deletes the item using remove().
+
+3.Form Handling with Validation
+-The Contact Us form uses JavaScript event handling.
+-event.preventDefault() prevents the page from refreshing when the form is submitted.
+-Input values are read using the .value property.
+-A feedback message is displayed to inform the user whether the form submission was successful or if required fields are missing.
+
+4.Persistent State with localStorage
+-The Cake Wishlist is saved in localStorage so that it remains available after refreshing the page.
+-The user's name entered in the contact form is also stored and automatically restored when the page reloads.
+
+5.Click-to-Reveal Banner
+-The About Us banner image can be clicked to reveal or hide a short message about the bakery.
+This functionality is implemented using classList.toggle() to show and hide the caption.
+

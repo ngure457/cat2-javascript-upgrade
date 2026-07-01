@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Crumbs Shop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+ 
+
+</head>
+<body>
+    <header>
+        <h1 >Sweet Crumbs Cake Shop </h1>
+        <nav>
+                <a href="#home">Home</a>
+                <a href="#cakes">Menu</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+        </nav>
+    </header>
+   <section class="hero" id="home">
+
+    <div class="hero-content">
+      <h2>Delicious Cakes for Every Celebration</h2>
+      <p>Freshly baked with love, creativity, and the sweetest ingredients.</p>
+      <a href="#cakes" class="btn">Explore Cakes 🚀</a>
+    </div>
+  </section>
+<!-- 
+  <section id="cakes">
+    <h2 class="section-title">Our Popular Cakes</h2>
+
+    <div class="cakes">
+      <div class="cake-card">
+        <img src=' images/cupcakes.jpg' alt="CupCakes ">
+        <div class="content">
+          <h3>CupCakes Delight</h3>
+          <p>Sweet and tasty cupcakes with a variety of flavors and toppings.</p>
+        </div>
+      </div>
+
+      <div class="cake-card">
+        <img src='images/strawberry.jpg' alt="Strawberry Cake">
+        <div class="content">
+          <h3>Strawberry Dream</h3>
+          <p>Soft vanilla sponge topped with fresh strawberries and cream.</p>
+        </div>
+      </div>
+
+      <div class="cake-card">
+        <img src=' images/wedding.jpg' alt="Wedding Cake">
+        <div class="content">
+          <h3>Wedding Special</h3>
+          <p>Elegant custom cakes designed beautifully for memorable weddings.</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <section id="cakes">
+    <h2 class="section-title">Our Popular Cakes</h2>
+
+    <div class="cakes" id="cakeContainer">
+
+    </div>
+</section>
+
+  <!-- <section id="about">
+    <div class="about">
+      <img src=' images/banner.jpg' alt="Banner">
+
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>
+          At Sweet Crumbs, we believe every celebration deserves a perfect cake.
+          Our team of passionate bakers creates handcrafted cakes using fresh ingredients,
+          unique designs, and lots of love.
+        </p>
+        <br>
+        <p>
+          From birthdays and weddings to anniversaries and graduations, we bring sweetness
+          to every special moment.
+        </p>
+      </div>
+    </div>
+  </section> -->
+  <section id="about">
+    <div class="about">
+
+        <img src="images/banner.jpg"
+             alt="Sweet Crumbs Banner"
+             id="banner">
+
+        <div class="about-content">
+            <h2>About Us</h2>
+
+            <p>
+                At Sweet Crumbs, we believe every celebration deserves a perfect cake.
+                Our team of passionate bakers creates handcrafted cakes using fresh ingredients,
+                unique designs, and lots of love.
+            </p>
+
+            <p>
+                From birthdays and weddings to anniversaries and graduations,
+                we bring sweetness to every special moment.
+            </p>
+
+            <p id="bannerCaption" class="hidden">
+                🎂 Baking happiness one cake at a time since 2026!
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section id="contact">
+
+<div class="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<form id="contactForm">
+
+<input
+type="text"
+id="name"
+placeholder="Your Name">
+
+<br><br>
+
+<input
+type="email"
+id="email"
+placeholder="Email">
+
+<br><br>
+
+<textarea
+id="message"
+placeholder="Your message"></textarea>
+
+<br><br>
+
+<button type="submit" class="btn">Send</button>
+
+</form>
+
+<p id="feedback"></p>
+
+</div>
+</section>
+<section>
+
+<h2 class="section-title">Cake Wishlist</h2>
+
+<input
+type="text"
+id="cakeInput"
+placeholder="Enter cake name">
+
+<button id="addCake">Add Cake</button>
+
+<ul id="wishlist"></ul>
+
+</section>
+
+  <footer>
+    <p> 🎁 2026 Sweet Crumbs Cake Shop | Made with love 🎁</p>
+  </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
