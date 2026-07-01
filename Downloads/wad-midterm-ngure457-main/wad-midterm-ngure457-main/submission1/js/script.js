@@ -143,3 +143,14 @@ localStorage.setItem("customerName",name);
 }
 
 });
+// Restore Name
+
+const savedName=
+localStorage.getItem("customerName");
+
+if(savedName){
+
+document.getElementById("name").value=
+savedName;
+
+}
