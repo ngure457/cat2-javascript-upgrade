@@ -105,3 +105,41 @@ if(saved){
 
 saved.forEach(createItem);
 }
+
+// Contact Form
+
+const form=document.getElementById("contactForm");
+
+const feedback=document.getElementById("feedback");
+
+form.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const name=document.getElementById("name").value;
+
+const email=document.getElementById("email").value;
+
+const message=document.getElementById("message").value;
+
+if(name==""||email==""||message==""){
+
+feedback.textContent=
+"Please fill in all fields.";
+
+feedback.style.color="red";
+
+}
+else{
+
+feedback.textContent=
+"Thank you "+name+
+"! We will contact you soon.";
+
+feedback.style.color="green";
+
+localStorage.setItem("customerName",name);
+
+}
+
+});
